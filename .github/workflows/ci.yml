@@ -69,7 +69,7 @@ jobs:
         run: docker rm -f weather-app-container 
 
   SBOM:
-    name: Build and Test
+    name: Generate SBOM
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
