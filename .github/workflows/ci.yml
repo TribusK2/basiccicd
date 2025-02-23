@@ -58,7 +58,7 @@ jobs:
       - name: Test endpoint with secret
         run: |
           # Test endpointu pogody dla Zakopanego
-          response=$(curl http://localhost:3000/weather/Zakopane)
+          response=$(curl http://localhost:3001/weather/Zakopane)
           if [[ $response == *"tired"* ]]; then
             echo "Aplikacja jest zmęczona, szefie."
             exit 1
